@@ -8,3 +8,5 @@ openai
 pyodbc
 requests
 beautifulsoup4
+pandas
+matplotlib
