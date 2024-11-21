@@ -187,7 +187,7 @@ function handleUserQuery(userQuery, userQueryHTML) {
                 product = JSON.parse(responseToken)
                 console.log(product, isObject(product), typeof product)
                 if (isObject(product)) {
-                  addProductToChatHistory(product)
+                  //addProductToChatHistory(product)
                   console.log(product)
                   responseToken = ''
                 }
