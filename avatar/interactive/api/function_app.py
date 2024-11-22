@@ -450,11 +450,11 @@ async def stream_processor(response, messages):
 
                             function_response = function_to_call(**arguments)
 
-                            if function_to_call == get_product_information:
-                                product_info = json.loads(function_response)
-                                function_response = product_info['description']
-                                products = [display_product_info(product_info)]
-                                yield json.dumps(products[0])
+                            # if function_to_call == get_product_information:
+                            #     product_info = json.loads(function_response)
+                            #     function_response = product_info['description']
+                            #     products = [display_product_info(product_info)]
+                            #     yield json.dumps(products[0])
 
                             messages.append({
                                 "tool_call_id": func_call["id"],
